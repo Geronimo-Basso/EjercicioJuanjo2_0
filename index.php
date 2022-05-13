@@ -1,5 +1,5 @@
 <?php
-
+//Try the code with http://localhost:8080/EjercicioJuanjo2_0/index.php
 include 'backend.php';
 
 function my_header( $title ) {
@@ -20,6 +20,8 @@ my_header( 'My title' );
         <p><?php echo $success; ?></p>
     </div>
     <?php } else { ?>
+    <h1>¡Bienvenido!</h1>
+    <link rel="stylesheet" href="style.css">
     <form action="" method="POST">
         Nombre: <input type="text" name="name"><br><br><br>
         Email: <input type="text" name="email"><br><br><br>
