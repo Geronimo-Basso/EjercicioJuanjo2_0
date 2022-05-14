@@ -14,6 +14,7 @@
             $this->name = $name;
             $this->email = $email;
             $this->dateRegister = $dateRegister;
+
         }
 
         /**
@@ -73,4 +74,5 @@
         }
 
 
-    }
+
+}

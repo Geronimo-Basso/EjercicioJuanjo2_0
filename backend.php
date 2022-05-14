@@ -8,6 +8,7 @@ if ( empty( $_POST ) ) {
 $name    = ( ! empty( $_POST['name'] ) ? $_POST['name'] : '' );
 $email   = ( ! empty( $_POST['email'] ) ? $_POST['email'] : '' );
 $date = date('d-m-y h:i:s');
+$listSubsribers= array();
 
 // Validation
 $success = '';
@@ -21,10 +22,19 @@ if ( empty( $email )) {
     include 'Subscriber.php';
     $subscriber= new Subscriber($name,$email,$date);
     $success = "Gracias por acceder, usuario: <BR> $subscriber";
+    array_push($listSubsribers, $subscriber);
+    subscribe($subscriber);
 }
 
 /*
 Funtion FILTER_VALIDATE_EMAIL to check the format of an email, returns true or false.
 */
-
+  function subscribe($sub){
+    //Nose muy bien que hacer esta funcion
+    if($sub==null){
+        echo 'Nose pudo subsribir el usuario';
+    }else{
+        echo 'Se suscribio con exito al usuario';
+    }
+}
 
