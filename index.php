@@ -21,11 +21,13 @@ my_header( 'My title' );
     </div>
     <?php } else { ?>
     <h1>¡Bienvenido!</h1>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleIndex.css">
     <form action="" method="POST">
         Nombre: <input type="text" name="name"><br><br><br>
         Email: <input type="text" name="email"><br><br><br>
-        <input type="submit">
+        <input type="submit"> <!--No me quedo muy claro como llamar a esto desde el css-->
+
+
     </form>
     <?php } ?>
 <?php

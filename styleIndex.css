@@ -1,0 +1,44 @@
+body{
+    background-color: #333333;
+}
+
+h1{
+    color:white;
+    font-family: verdana;
+    font-size: 300%;
+    text-align: center;
+
+}
+
+form{
+    font-family:verdana;
+    font-size: 100%;
+    color:white;
+    text-align: center;
+
+}
+
+p{
+    color:black;
+    background-color: red;
+
+
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:#95df1f;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+
+footer{
+    color:white;
+
+}
+
+
