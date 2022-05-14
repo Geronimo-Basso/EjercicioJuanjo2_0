@@ -1,4 +1,6 @@
+<link rel="stylesheet" href="backend.css">
 <?php
+
 
 if ( empty( $_POST ) ) {
     return;
@@ -20,21 +22,33 @@ if ( empty( $email )) {
     $errors['email_format']='EL FORMATO DEL EMAIL ESTA MAL';
 }else {
     include 'Subscriber.php';
-    $subscriber= new Subscriber($name,$email,$date);
-    $success = "Gracias por acceder, usuario: <BR> $subscriber";
-    array_push($listSubsribers, $subscriber);
-    subscribe($subscriber);
-}
+    $subscriber= new Subscriber($name,$email,$date);?>
+    <p >
+        <?php
+        $success = "Gracias por acceder, usuario: <BR> $subscriber";
+        ?>
+    </p>
+<?php
+        array_push($listSubsribers, $subscriber);
+        subscribe($subscriber);
+} ?>
 
+<?php
 /*
 Funtion FILTER_VALIDATE_EMAIL to check the format of an email, returns true or false.
 */
   function subscribe($sub){
     //Nose muy bien que hacer esta funcion
-    if($sub==null){
-        echo 'Nose pudo subsribir el usuario';
-    }else{
-        echo 'Se suscribio con exito al usuario';
+    if($sub==null){?>
+        <p class="red">
+            Nose pudo subsribir el usuario
+        </p>
+<?php
+    }else{ ?>
+        <p class="green">
+          Se suscribio con exito al usuario
+        </p>
+<?php
     }
 }
 
