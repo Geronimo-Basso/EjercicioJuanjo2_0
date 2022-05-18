@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../assets/css/backend.css">
 <?php
 
 if ( empty( $_POST ) ) {

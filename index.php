@@ -21,7 +21,7 @@ my_header( 'My title' );
     </div>
     <?php } else { ?>
     <h1>¡Bienvenido!</h1>
-    <link rel="stylesheet" href="assets/css/index.css">
+
     <form action="" method="POST">
         Nombre: <input type="text" name="name"><br><br><br>
         Email: <input type="text" name="email"><br><br><br>
