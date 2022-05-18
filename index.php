@@ -1,9 +1,9 @@
 <?php
 //Try the code with http://localhost:8080/EjercicioJuanjo2_0/index.php
-include 'backend.php';
+include 'src/backend.php';
 
 function my_header( $title ) {
-    include 'header.php';
+    include 'src/views/header.php';
 }
 my_header( 'My title' );
 ?>
@@ -21,7 +21,7 @@ my_header( 'My title' );
     </div>
     <?php } else { ?>
     <h1>¡Bienvenido!</h1>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <form action="" method="POST">
         Nombre: <input type="text" name="name"><br><br><br>
         Email: <input type="text" name="email"><br><br><br>
@@ -31,4 +31,4 @@ my_header( 'My title' );
     </form>
     <?php } ?>
 <?php
-include 'footer.php';
+include 'src/views/footer.php';
