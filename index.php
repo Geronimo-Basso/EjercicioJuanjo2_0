@@ -1,10 +1,8 @@
 <?php
-//Try the code with http://localhost:8080/EjercicioJuanjo2_0/index.php
+
+include 'src/functions.php';
 include 'src/backend.php';
 
-function my_header( $title ) {
-    include 'src/views/header.php';
-}
 my_header( 'My title' );
 ?>
     <?php if ( ! empty( $errors ) ) { ?>
