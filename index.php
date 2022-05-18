@@ -29,4 +29,4 @@ my_header( 'My title' );
     </form>
     <?php } ?>
 <?php
-include 'src/views/footer.php';
+my_footer();
