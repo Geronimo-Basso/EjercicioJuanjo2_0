@@ -3,9 +3,9 @@
  * Template vars.
  * @var string $title The page title.
  */
-function importFile($filename){
+function import_style($filename){
     ?>
-    <link rel="stylesheet" href="../../assets/css/<?php $filename?>">
+    <link rel="stylesheet" href="../../assets/css/<?php echo $filename; ?>" />
     <?php
 }
 ?>
@@ -15,8 +15,8 @@ function importFile($filename){
     <meta charset="UTF-8">
     <title><?php echo $title; ?></title>
     <?php
-    importFile('styles.css');
-    importFile('backend.css');
+    import_style('styles.css');
+    import_style('backend.css');
     ?>
 </head>
 <body>
