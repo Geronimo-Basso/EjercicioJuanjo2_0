@@ -21,11 +21,19 @@ my_header( 'My title' );
     <h1>¡Bienvenido!</h1>
 
     <form action="" method="POST">
-        Nombre: <input type="text" name="name"><br><br><br>
-        Email: <input type="text" name="email"><br><br><br>
-        <input type="submit"> <!--No me quedo muy claro como llamar a esto desde el css-->
+	    <div class="form-field name">
+		    <label for="name">Nombre:</label>
+		    <input id="name" type="text" name="name" />
+	    </div>
 
+	    <div class="form-field email">
+		    <label for="email">Email:</label>
+		    <input id="email" type="text" name="email" />
+	    </div>
 
+	    <div class="form-field">
+            <input type="submit" />
+	    </div>
     </form>
     <?php } ?>
 <?php
