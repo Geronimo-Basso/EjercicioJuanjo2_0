@@ -11,3 +11,9 @@ function my_footer() {
 function get_style_url( $filename ) {
 	return  '../assets/css/' . $filename;
 }
+
+function subscribe( $subscriber ) {
+	// TODO: Subscribe to the user.
+
+	return true;
+}
