@@ -10,16 +10,15 @@ h1{
 
 }
 
-form{
+form {
     font-family: verdana;
     font-size: 100%;
     color:white;
     text-align: center;
 }
 
-p{
-    color:black;
-    background-color: red;
+.form-field {
+    margin-bottom: 1rem;
 }
 
 input[type=submit] {
@@ -29,6 +28,19 @@ input[type=submit] {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+}
+
+/**
+ * Form notices.
+ */
+.success-notice {
+    background-color: #95df1f;
+    color: white;
+}
+
+.error-notices {
+    background-color: red;
+    color: white;
 }
 
 /**
