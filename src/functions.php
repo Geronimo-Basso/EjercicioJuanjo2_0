@@ -7,3 +7,7 @@ function my_header( $title ) {
 function my_footer() {
 	include 'views/footer.php';
 }
+
+function import_style( $filename ) {
+	return  '../assets/css/' . $filename;
+}
