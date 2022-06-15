@@ -7,7 +7,6 @@ if ( empty( $_POST ) ) {
 // Posted data.
 $name  = ( ! empty( $_POST['name'] ) ? $_POST['name'] : '' );
 $email = ( ! empty( $_POST['email'] ) ? $_POST['email'] : '' );
-$date  = date( 'd-m-y h:i:s' );
 
 // Validation.
 $success = '';
@@ -19,7 +18,8 @@ if ( empty( $email ) ) {
 	$errors['email_format'] = 'EL FORMATO DEL EMAIL ESTA MAL';
 } else {
     include 'Subscriber.php';
-	$subscriber = new Subscriber( $name, $email, $date );
+
+	$subscriber = new Subscriber( $name, $email, date( 'd-m-y h:i:s' ) );
 
 	if ( subscribe( $subscriber ) ) {
 		$success = "Gracias por acceder, usuario: <BR> $subscriber";
