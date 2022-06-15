@@ -8,6 +8,6 @@ function my_footer() {
 	include 'views/footer.php';
 }
 
-function import_style( $filename ) {
+function get_style_url( $filename ) {
 	return  '../assets/css/' . $filename;
 }

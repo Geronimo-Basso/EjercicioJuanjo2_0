@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <title><?php echo $title; ?></title>
-    <link rel="stylesheet" href="<?php echo import_style( 'styles.css' ); ?>" />
-    <link rel="stylesheet" href="<?php echo import_style( 'backend.css' ); ?>" />
+    <link rel="stylesheet" href="<?php echo get_style_url( 'styles.css' ); ?>" />
+    <link rel="stylesheet" href="<?php echo get_style_url( 'backend.css' ); ?>" />
 </head>
 <body>
