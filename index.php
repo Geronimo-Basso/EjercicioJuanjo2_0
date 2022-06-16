@@ -5,6 +5,13 @@ include 'src/backend.php';
 
 my_header( 'My title' );
 
+//Another way, not recommend by Juanjo
+//global $errors;
+//global $success;
+//
+//check_errors($errors);
+//check_success($success);
+
 if(isset($errors)){
     check_errors($errors);}
 
