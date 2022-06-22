@@ -1,3 +1,36 @@
+.menu-bar{
+    padding:0;
+    margin:0;
+    color:white;
+    background: #333333;
+    text-align: center;
+    border-style:outset;
+    box-sizing: border-box;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding:15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.active,.menu-bar ul li:hover
+{
+    background-color: #000000;
+    border-radius: 3px;
+}
+
 body {
     background-color: #333333;
 }
