@@ -13,7 +13,11 @@ my_header( 'My title' );
 //check_success($success);
 
 /* Checking some git stuff
- Currently working on branch dev2.0
+
+
+ This change is from working on branch dev2.0.
+
+
  * */
 
 if(isset($errors)){
