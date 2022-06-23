@@ -12,6 +12,10 @@ my_header( 'My title' );
 //check_errors($errors);
 //check_success($success);
 
+/* Checking some git stuff
+ Currently working on branch dev2.0
+ * */
+
 if(isset($errors)){
     check_errors($errors);}
 
